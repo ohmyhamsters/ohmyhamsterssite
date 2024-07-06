@@ -3,46 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Open Graph meta tags for iMessage preview -->
-    <meta property="og:title" content="Oh My Hamsters">
-    <meta property="og:description" content="We are the future.">
-    <meta property="og:image" content="regpreview.png">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ohmyhamsters.com">
-    <link rel="icon" type="image/png" href="favicon.png">
-
     <title>Oh My Hamsters</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ohmyhamsters.com/">
+    <meta property="og:title" content="Oh My Hamsters">
+    <meta property="og:description" content="Adorable Hamster-themed Products">
+    <meta property="og:image" content="logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.ohmyhamsters.com/">
+    <meta property="twitter:title" content="Oh My Hamsters">
+    <meta property="twitter:description" content="Adorable Hamster-themed Products">
+    <meta property="twitter:image" content="logo.png">
+
+    <!-- Apple-specific -->
+    <meta name="apple-mobile-web-app-title" content="Oh My Hamsters">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <!-- iMessage preview -->
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+
     <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #f0f0f0;
+        :root {
+            --dark-brown: #1a1613;
         }
-        img {
-            width: 50%;
-            height: auto;
-        }
-        .contact-link {
-            position: absolute;
-            bottom: 10px;
+        .btn {
+            background-color: var(--dark-brown);
+            color: white;
+            padding: 10px 20px;
             text-align: center;
-            width: 100%;
-        }
-        .contact-link a {
             text-decoration: none;
-            color: #000;
-            font-size: 16px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
-    <img src="https://raw.githubusercontent.com/ohmyhamsters/ohmyhamsterssite/main/OHMYHAMSTERS.png" alt="Oh My Hamsters">
-    <div class="contact-link">
-        <a href="mailto:hamster@ohmyhamsters.com">Contact</a>
+    <div class="app-container">
+        <div class="content-wrapper">
+            <header>
+                <img src="logo.png" alt="Oh My Hamsters" class="logo">
+            </header>
+            
+        <main>
+            <section class="cta-buttons">
+                <a href="https://www.amazon.com/Classy-Hello-Hamster-Premium-Fitted/dp/B07L91JLW9" class="btn product-btn"><i class="fas fa-tshirt"></i> Classy Hello Hamster</a>
+                <a href="https://www.amazon.com/Hamster-Mushrooms-Vaporwave-Premium-T-Shirt/dp/B0BBFWLW7Y" class="btn product-btn"><i class="fas fa-moon"></i> Hamster on the Moon</a>
+                <!--<a href="https://www.amazon.com/Classy-Hamster-Mushrooms-Vaporwave-Colors/dp/B0BBDXSZ2B" class="btn product-btn"><i class="fas fa-tshirt"></i> Hamster on the Moon Tank Top</a>-->
+            </section>
+        </main>
+
+        <footer>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> hello@ohmyhamsters.com</p>
+                <p><i class="fas fa-globe"></i> Bringing hamster joy worldwide</p>
+            </div>
+            <p class="copyright">&copy; 2024 Oh My Hamsters</p>
+        </footer>
     </div>
 </body>
 </html>
